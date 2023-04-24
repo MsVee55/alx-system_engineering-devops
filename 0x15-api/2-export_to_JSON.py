@@ -16,7 +16,7 @@ if __name__ == "__main__":
         if userName is not None:
             allTasks = requests.get(
                 "{}/todos?userId={}".format(url, userId)).json()
-            tasksList =[{
+            tasksList = [{
                 "task": task.get("title"),
                 "completed": task.get("completed"),
                 "username": userData.get("username")
