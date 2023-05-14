@@ -13,13 +13,16 @@ Overall, postmortems are a crucial part of maintaining reliable and stable techn
 # Issue in summary:
 
 
-* Duration: May 12, 2023 3:00 PM PST - May 12, 2023 6:00 PM PST
+# Duration:
+May 12, 2023 3:00 PM PST - May 12, 2023 6:00 PM PST
 
-* Impact: Our company's web application was down for three hours, resulting in a complete outage for all users, including our paying customers. Users were experiencing slow load times and inability to access the application.
+# Impact:
+Our company's web application was down for three hours, resulting in a complete outage for all users, including our paying customers. Users were experiencing slow load times and inability to access the application.
 
-* Root Cause: The root cause of the issue was a database connectivity problem.
+# Root Cause:
+The root cause of the issue was a database connectivity problem.
 
-* Timeline:
+# Timeline:
 - 3:00 PM PST: The issue was detected by our monitoring system that alerted the on-call engineer.
 - The engineer noticed multiple errors in the database logs and started investigating the issue.
 - Assumption was made that the database might have been overwhelmed by excessive traffic.
@@ -28,11 +31,11 @@ Overall, postmortems are a crucial part of maintaining reliable and stable techn
 - The team noticed an issue with the database configuration resulting in connectivity issues and an update to the database.
 - The incident was resolved at 6:00 PM PST.
 
-* Root Cause and Resolution:
+# Root Cause and Resolution:
 
 The database configuration was updated recently, resulting in connectivity issues. This prevented the application from accessing the database, causing the outage. The incident was resolved by updating the database configuration to the correct setting and restarting the database services.
 
-* Corrective and Preventative Measures:
+# Corrective and Preventative Measures:
 
 To prevent this type of outage from occurring again, we need to take the following measures:
 - Implement better monitoring to detect database connectivity issues specifically.
@@ -43,3 +46,4 @@ To prevent this type of outage from occurring again, we need to take the followi
 
 Hey! Don't worry, not everyone will face such outage.
 We're programmers, and we never make errors....without solutions.
+😁
